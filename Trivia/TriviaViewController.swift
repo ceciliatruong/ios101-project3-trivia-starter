@@ -72,7 +72,7 @@ class TriviaViewController: UIViewController {
     }
     
     private func configure(with trivia: TriviaData) {
-        cardNumber.text = "Question 1/3"
+        cardNumber.text = "Question \(selectedIndex+1)/3"
         cardType.text = "Geography"
         cardField.text = trivia.question
         let randomized = trivia.answerBank.shuffled()
